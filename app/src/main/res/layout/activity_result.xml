@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity"
+    android:orientation="vertical"
+    android:background="@drawable/result_backgroud"
+    android:padding="25dp">
+
+
+        <TextView
+            style="@style/result_text"
+            android:text="Water Content"/>
+        <com.daimajia.numberprogressbar.NumberProgressBar
+            android:id="@+id/result_waterCon_Pro"
+            style="@style/result_progressBar"
+            app:progress_reached_color="@color/windowBackground"
+            app:progress_text_color="@color/windowBackground"
+            app:progress_text_size="18dp" />
+    <RelativeLayout style="@style/result_Re">
+        <TextView
+            style="@style/result_text_hide"
+            android:text="0"
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            style="@style/result_text_hide"
+            android:layout_alignParentRight="true"
+            android:text="10"/>
+    </RelativeLayout>
+
+        <TextView
+            style="@style/result_text"
+            android:text="Sweetness"/>
+        <com.daimajia.numberprogressbar.NumberProgressBar
+            android:id="@+id/result_sweetness_Pro"
+            style="@style/result_progressBar"
+            app:progress_reached_color="@color/windowBackground"
+            app:progress_text_color="@color/windowBackground"
+            app:progress_text_size="18dp" />
+    <RelativeLayout style="@style/result_Re">
+        <TextView
+            style="@style/result_text_hide"
+            android:text="0"
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            style="@style/result_text_hide"
+            android:layout_alignParentRight="true"
+            android:text="10"/>
+    </RelativeLayout>
+
+
+    <TextView
+            style="@style/result_text"
+            android:text="Texture"/>
+    <com.daimajia.numberprogressbar.NumberProgressBar
+        android:id="@+id/result_texture_Pro"
+        style="@style/result_progressBar"
+        app:progress_reached_color="@color/windowBackground"
+        app:progress_text_color="@color/windowBackground"
+        app:progress_text_size="18dp" />
+    <RelativeLayout style="@style/result_Re">
+        <TextView
+            style="@style/result_text_hide"
+            android:text="crispy"
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            style="@style/result_text_hide"
+            android:layout_alignParentRight="true"
+            android:text="soggy"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="100dp">
+        <TextView
+            android:id="@+id/result_tv"
+            style="@style/WrapWrap"
+            android:textSize="26dp"
+            android:text=" TRY AGAIN :( "
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/windowBackground"
+            android:background="@drawable/selector_btn_test"
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>
